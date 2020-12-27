@@ -2,7 +2,7 @@ import globalState from "./globalState";
 let microApps = [
   {
     name: "sub-vue",
-    entry: "//localhost:7777/",
+    entry: "//localhost:7777/sub/",
     activeRule: "/sub-vue",
   },
 ];

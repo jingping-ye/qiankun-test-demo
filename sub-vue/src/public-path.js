@@ -2,7 +2,7 @@
   if (window.__POWERED_BY_QIANKUN__) {
     if (process.env.NODE_ENV === "development") {
       // eslint-disable-next-line no-undef
-      __webpack_public_path__ = `//localhost:${process.env.VUE_APP_PORT}/`;
+      __webpack_public_path__ = `//localhost:${process.env.VUE_APP_PORT}/sub/`;
       return;
     }
     // eslint-disable-next-line no-undef

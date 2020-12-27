@@ -2,6 +2,7 @@
 const { name } = require("./package.json");
 
 module.exports = {
+  publicPath: "sub/",
   configureWebpack: {
     output: {
       library: `${name}-[name]`,
