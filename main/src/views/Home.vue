@@ -5,6 +5,7 @@
     <p>
       <a-button type="primary" @click="updateUserInfo">变更用户信息</a-button>
     </p>
+    <p>路由跳转测试：<a-button type="primary" @click="goToAbout">跳转到about页面</a-button></p>
   </div>
 </template>
 
@@ -18,6 +19,9 @@ export default {
     },
   },
   methods: {
+    goToAbout() {
+      this.$router.push("/about");
+    },
     updateUserInfo() {
       this.$globalState.setGlobalState({ userInfo: { name: "joy" } });
     },
