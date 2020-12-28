@@ -25,12 +25,12 @@ export default {
         {
           name: "sub-vue",
           text: "子vue应用",
-          path: "/sub-vue",
+          path: "/vue",
         },
         {
           name: "sub-react",
           text: "子react应用",
-          path: "/sub-react",
+          path: "/react",
         },
       ],
     };

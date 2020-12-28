@@ -14,6 +14,7 @@ let instance = null;
 
 function render(props = {}) {
   const { container, routerBase } = props;
+  console.log("window.__POWERED_BY_QIANKUN__ ", window.__POWERED_BY_QIANKUN__);
   const router = new VueRouter({
     base: window.__POWERED_BY_QIANKUN__ ? routerBase : process.env.BASE_URL,
     mode: "history",

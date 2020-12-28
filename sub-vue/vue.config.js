@@ -2,7 +2,7 @@
 const { name } = require("./package.json");
 
 module.exports = {
-  publicPath: "sub/",
+  publicPath: "/sub-vue/",
   configureWebpack: {
     output: {
       library: `${name}-[name]`,
