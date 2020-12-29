@@ -8,7 +8,7 @@ let microApps = [
   },
   {
     name: "sub-react",
-    entry: "//localhost:7778",
+    entry: isProduction ? "/sub-react/" : "//localhost:7778/sub-react/",
     activeRule: "/react",
   },
 ];
