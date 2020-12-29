@@ -39,4 +39,8 @@ registerMicroApps(microApps, {
   ],
 });
 
-start();
+start({
+  sandbox: {
+    experimentalStyleIsolation: true,
+  },
+});
