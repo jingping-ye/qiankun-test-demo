@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>主应用</h1>
-    <p>用户信息：{{ userInfo }}</p>
+    <p>用户信息：{{ JSON.stringify(userInfo) }}</p>
     <p>
       <a-button type="primary" @click="updateUserInfo">变更用户信息</a-button>
     </p>

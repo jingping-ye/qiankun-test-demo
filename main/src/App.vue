@@ -32,6 +32,21 @@ export default {
           text: "子react应用",
           path: "/react",
         },
+        {
+          name: "sub-angular",
+          text: "子Angular应用",
+          path: "/angular",
+        },
+        {
+          name: "sub-html",
+          text: "子html应用",
+          path: "/sub-html/index.html",
+        },
+        {
+          name: "sub-jsp",
+          text: "子JSP应用",
+          path: "/sub-jsp/index.jsp",
+        },
       ],
     };
   },

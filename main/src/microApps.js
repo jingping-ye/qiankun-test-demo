@@ -11,6 +11,31 @@ let microApps = [
     entry: isProduction ? "/sub-react/" : "//localhost:7778/sub-react/",
     activeRule: "/react",
   },
+  {
+    name: "sub-angular",
+    entry: isProduction ? "/sub-angular/" : "//localhost:7779/sub-angular/",
+    activeRule: "/angular",
+  },
+  {
+    name: "sub-html-index",
+    entry: isProduction ? "/sub-html/index.html" : "//localhost:7780/index.html",
+    activeRule: "/sub-html/index.html",
+  },
+  {
+    name: "sub-html-about",
+    entry: isProduction ? "/sub-html/about.html" : "//localhost:7780/about.html",
+    activeRule: "/sub-html/about.html",
+  },
+  {
+    name: "sub-jsp-index",
+    entry: isProduction ? "/sub-jsp/index.jsp" : "//localhost:7781/sub-jsp/index.jsp",
+    activeRule: "/sub-jsp/index.jsp",
+  },
+  {
+    name: "sub-jsp-about",
+    entry: isProduction ? "/sub-jsp/about.jsp" : "//localhost:7781/sub-jsp/about.jsp",
+    activeRule: "/sub-jsp/about.jsp",
+  },
 ];
 
 microApps = microApps.map((item) => {

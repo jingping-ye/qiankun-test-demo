@@ -1,6 +1,6 @@
 const vueConfig = {
   devServer: {
-    port: 9999, // 在.env中VUE_APP_PORT=7788，与父应用的配置一
+    port: 9998, // 在.env中VUE_APP_PORT=7788，与父应用的配置一
   },
 };
 

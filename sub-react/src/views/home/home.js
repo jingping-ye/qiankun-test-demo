@@ -42,20 +42,11 @@ class Home extends Component {
     );
   }
   changeUserInfo() {
-    console.log("输出");
     this.props.SET_USER_INFO({ userInfo: { name: "韩梅" } });
-  }
-
-  componentDidMount() {
-    console.log("挂载完毕");
   }
 
   goToAboutPage() {
     this.props.history.push("/about");
-  }
-
-  printStore() {
-    console.log("this.props", this.props);
   }
 }
 
