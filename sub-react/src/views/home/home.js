@@ -1,7 +1,6 @@
 import { Component } from "react";
 import { connect } from "react-redux";
-import { Typography, Button } from "antd";
-const { Title } = Typography;
+import { Button, Card } from "antd";
 
 const mapStateToProps = (state) => {
   return {
@@ -26,7 +25,13 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Title>子Sub-React页面</Title>
+        <h1>子Sub-React页面</h1>
+        <Card title='技术栈' style={{ width: "90%", margin: "0 auto", marginLeft: "20px" }}>
+          <p>前端底层框架：React[17.0.1]</p>
+          <p>前端UI框架：antd[4.9.4]</p>
+          <p>状态管理工具：react-redux[7.2.2]</p>
+          <p>路由管理：react-router-dom[5.2.0]</p>
+        </Card>
         <Button type='primary' onClick={() => this.goToAboutPage()}>
           跳转到About页面
         </Button>

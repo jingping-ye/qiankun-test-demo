@@ -1,62 +1,23 @@
 <template>
   <div id="root-app">
-    <a-menu v-model="current" mode="horizontal">
-      <a-menu-item v-for="menu in menuList" :key="menu.path">
-        <router-link :to="{ path: menu.path }">
-          {{ menu.text }}
-        </router-link>
-      </a-menu-item>
-    </a-menu>
-    <div id="subapp-viewport"></div>
-    <router-view />
+    <MainLayout v-if="isLogin" />
+    <router-view v-else />
   </div>
 </template>
 <script>
+import MainLayout from "./layout/mainLayout";
+import { mapState } from "vuex";
 export default {
-  watch: {
-    $route: {
-      handler(newV) {
-        this.current = [newV.fullPath];
-      },
-      immediate: true,
-    },
+  components: {
+    MainLayout,
   },
   data() {
-    return {
-      current: ["/"],
-      menuList: [
-        {
-          name: "main",
-          text: "主应用",
-          path: "/",
-        },
-        {
-          name: "sub-vue",
-          text: "子vue应用",
-          path: "/vue",
-        },
-        {
-          name: "sub-react",
-          text: "子react应用",
-          path: "/react",
-        },
-        {
-          name: "sub-angular",
-          text: "子Angular应用",
-          path: "/angular",
-        },
-        {
-          name: "sub-html",
-          text: "子html应用",
-          path: "/sub-html/index.html",
-        },
-        {
-          name: "sub-jsp",
-          text: "子JSP应用",
-          path: "/sub-jsp/index.jsp",
-        },
-      ],
-    };
+    return {};
+  },
+  computed: {
+    ...mapState({
+      isLogin: (state) => state.isLogin,
+    }),
   },
 };
 </script>
@@ -67,6 +28,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 #nav {
