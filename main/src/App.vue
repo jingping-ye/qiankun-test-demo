@@ -13,6 +13,14 @@
 </template>
 <script>
 export default {
+  watch: {
+    $route: {
+      handler(newV) {
+        this.current = [newV.fullPath];
+      },
+      immediate: true,
+    },
+  },
   data() {
     return {
       current: ["/"],
