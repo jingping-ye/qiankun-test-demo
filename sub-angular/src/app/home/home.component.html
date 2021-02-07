@@ -1,13 +1,38 @@
-<h1 nz-typography>This is Sub-Angular application!</h1>
+<h1 nz-typography>Sub-Angular应用</h1>
 
-<button nz-button nzType="primary" (click)="goToAboutPage()">
-  跳转到about页面
-</button>
-
-<button nz-button nzType="primary" (click)="changeUserInfo()">
-  变更用户信息
-</button>
-
-<div>
-  <div>用户名：{{ userInfo.name }}</div>
-</div>
+<nz-card style="width: 90%; margin: 0 auto; margin-top: 20px" nzTitle="技术栈">
+  <p>前端底层框架：angular[9.1.13]</p>
+  <p>前端UI框架：ng-zorro-antd[9.3.0]</p>
+  <p>路由管理：@angular/router[9.1.13]</p>
+  <p>
+    微前端框架：single-spa[5.8.3]
+    <nz-divider nzType="vertical"></nz-divider>single-spa-angular[4.9.1]
+  </p>
+</nz-card>
+<nz-card
+  style="width: 90%; margin: 0 auto; margin-top: 20px"
+  nzTitle="测试区域"
+>
+  <p>
+    测试数据通信：
+    <span>当前模块获取数据：{{ userInfo | toJsonStr }}</span>
+    <button nz-button nzType="primary" (click)="changeUserInfo()">
+      变更数据
+    </button>
+  </p>
+  <p>
+    测试当前应用路由管理：
+    <button nz-button nzType="primary" (click)="goToAboutPage()">
+      跳转到about页面
+    </button>
+  </p>
+  <p>
+    测试子应用互相跳转：<button
+      nz-button
+      nzType="primary"
+      (click)="goToSubReactApp()"
+    >
+      跳转到子react应用
+    </button>
+  </p>
+</nz-card>

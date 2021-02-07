@@ -14,7 +14,7 @@
         <a-button type="primary" @click="updateUserInfo" style="margin-left:10px;">变更数据</a-button>
       </p>
       <p>测试当前应用路由管理：<a-button type="primary" @click="goToAbout">跳转到about页面</a-button></p>
-      <p>测试子应用互相跳转：<a-button type="primary" @click="goToAbout">跳转到子vue应用</a-button></p>
+      <p>测试子应用互相跳转：<a-button type="primary" @click="goToSubReactApp">跳转到Sub-React应用</a-button></p>
     </a-card>
   </div>
 </template>
@@ -33,10 +33,13 @@ export default {
   methods: {
     ...mapActions("global", ["setGlobalState"]),
     updateUserInfo() {
-      this.setGlobalState({ userInfo: { name: "张三" } });
+      this.setGlobalState({ userInfo: { name: "sub-vue" } });
     },
     goToAbout() {
       this.$router.push("/about");
+    },
+    goToSubReactApp() {
+      location.href = "/react";
     },
   },
   mounted() {

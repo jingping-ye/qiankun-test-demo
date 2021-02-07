@@ -34,7 +34,7 @@ export default {
       this.$router.push("/about");
     },
     updateUserInfo() {
-      this.$globalState.setGlobalState({ userInfo: { name: "joy" } });
+      this.$globalState.setGlobalState({ userInfo: { name: "main-vue" } });
     },
   },
 };

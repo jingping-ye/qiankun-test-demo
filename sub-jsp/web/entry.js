@@ -39,3 +39,7 @@ $("body").on("click", "#change-user-info", function () {
 $("body").on("click", "#go-to-about-page", function () {
     location.href = "about.jsp";
 });
+
+$("body").on("click", "#go-to-angular-app", function () {
+    location.href = "/sub-html/index.html";
+});

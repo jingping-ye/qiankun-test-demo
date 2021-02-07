@@ -31,12 +31,15 @@ function setUserInfo(userInfo) {
 }
 
 $("body").on("click", "#change-user-info", function () {
-  let newUserInfo = { userInfo: { name: "purehtml" } };
+  let newUserInfo = { userInfo: { name: "sub-html" } };
   setUserInfo(newUserInfo.userInfo);
   globalDataProp.setGlobalState(newUserInfo);
 });
 
 $("body").on("click", "#go-to-about-page", function () {
-  console.log("1111");
   location.href = "./about.html";
+});
+
+$("body").on("click", "#go-to-angular-app", function () {
+  location.href = "/angular";
 });
