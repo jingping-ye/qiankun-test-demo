@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "npm run serve:single-spa:sub-angular",
-    "build": "build:single-spa:sub-angular",
+    "build": "npm run build:single-spa:sub-angular",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

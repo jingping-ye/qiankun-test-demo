@@ -33,7 +33,7 @@
       </p>
       <p>
         测试子应用互相跳转：
-        <button type="button" class="btn btn-primary" id="go-to-angular-app">点击跳转到sub-angular应用</button>
+        <button type="button" class="btn btn-primary" id="go-to-angular-app">点击跳转到sub-html应用</button>
       </p>
     </div>
   </div>

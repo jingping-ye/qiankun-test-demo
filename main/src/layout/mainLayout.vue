@@ -64,7 +64,7 @@ export default {
         {
           name: "sub-html",
           text: "子html应用",
-          path: "/sub-html/index.html",
+          path: "/html/index.html",
         },
         {
           name: "sub-jsp",

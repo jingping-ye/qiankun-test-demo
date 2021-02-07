@@ -19,12 +19,12 @@ let microApps = [
   {
     name: "sub-html-index",
     entry: isProduction ? "/sub-html/index.html" : "//localhost:7780/index.html",
-    activeRule: "/sub-html/index.html",
+    activeRule: "/html/index.html",
   },
   {
     name: "sub-html-about",
     entry: isProduction ? "/sub-html/about.html" : "//localhost:7780/about.html",
-    activeRule: "/sub-html/about.html",
+    activeRule: "/html/about.html",
   },
   {
     name: "sub-jsp-index",

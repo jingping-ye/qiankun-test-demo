@@ -41,5 +41,5 @@ $("body").on("click", "#go-to-about-page", function () {
 });
 
 $("body").on("click", "#go-to-angular-app", function () {
-    location.href = "/sub-html/index.html";
+    location.href = "/html/about.html";
 });
