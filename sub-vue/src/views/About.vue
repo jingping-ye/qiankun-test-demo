@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>This is a <span style="font-size: 28px">Vue-app-about</span> page!</h1>
   </div>
 </template>
