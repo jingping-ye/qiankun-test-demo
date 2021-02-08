@@ -82,7 +82,16 @@ export default {
   watch: {
     $route: {
       handler(newV) {
-        this.current = [newV.fullPath];
+        const fullPath = newV.fullPath;
+        const selectedPath = this.menuList.filter((item) => {
+          const appPrefix = item.path.split("/")[1];
+          return fullPath.startsWith(`/${appPrefix}`);
+        });
+        if (selectedPath.length > 0) {
+          this.current = [selectedPath[0].path];
+        } else {
+          this.current = [];
+        }
       },
       immediate: true,
     },
